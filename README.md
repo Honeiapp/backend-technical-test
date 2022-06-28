@@ -1,4 +1,4 @@
-# Candidate Exercise – Full-stack Web Developer
+# Candidate Exercise / Full-stack Web Developer
 
 > Max. duration: 48 hours
 
