@@ -85,4 +85,4 @@ averagePair([], 4)
 
 ## Exercice 4: Contributors List
 
-By using the [GitHub REST API](https://docs.github.com/en/rest) or the [GitHub GraphQL API](https://docs.github.com/en/graphql), build an application that allows a user to list the contributors of a given repository. No other requirement: show us your skills!
+By using the [GitHub REST API](https://docs.github.com/en/rest), build an application (preferably using Angular with TypeScript) that allows a user to list the contributors of a given repository. No other requirement: show us your skills!
