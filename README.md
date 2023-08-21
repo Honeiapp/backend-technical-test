@@ -1,4 +1,4 @@
-# Candidate Exercise / Full-stack Web Developer for Yopidoya
+# Candidate Exercise / Full-stack Web Developer for honei
 
 > Max. duration: 48 hours
 
