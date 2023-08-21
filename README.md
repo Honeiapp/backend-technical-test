@@ -115,6 +115,7 @@ Imagine you have to sum up 100,000 numbers. If you sum them up one at a time, it
 
 4.  **Tips**:
 -   If you've never heard of "worker threads," don't worry. Look for documentation or tutorials on how to use them in Node.js. They're a tool to enable parallel processing.
+- Given the nature of the operation and the efficiency gains expected with parallel processing, your solution should be able to process 10k numbers in under 0.5 second.
 -   Think about how you can efficiently split and sum the numbers.
 
 ### What We're Looking For:
