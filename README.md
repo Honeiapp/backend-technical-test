@@ -83,6 +83,38 @@ averagePair([], 4)
 // false
 ```
 
-## Exercice 4: Contributors List
+## Exercice 4: Parallel Processing
+Objective:
+Create a service in Node.js that generates a set of random numbers and then sums up these numbers efficiently using parallel processing. Through this task, you'll learn about leveraging multiple "threads" to process data more swiftly.
+Steps:
+1- Random Number Generation:
+We're providing you with this function that generates a set of random numbers:
+```ts
+function generateRandomArray(length: number): Array<number> {
+    return Array.from({ length }, () => Math.floor(Math.random() * 1000));
+}
+```
+2- Why Use Parallel Processing?:
+Imagine you have to sum up 100,000 numbers. If you sum them up one at a time, it would take a while. But if you split those numbers into smaller groups and sum up several groups at the same time (in parallel), you could get the total much faster. This is the idea behind parallel processing.
 
-By using the [GitHub REST API](https://docs.github.com/en/rest), build an application (preferably using Angular with TypeScript) that allows a user to list the contributors of a given repository. No other requirement: show us your skills!
+3- Create the Service:
+. Build a service with a POST endpoint named /generate-and-sum.
+. This endpoint should accept a number called count that decides how many random numbers you want to generate.
+. Generate the numbers using the generateRandomArray function.
+. Divide this large set of numbers into smaller batches. For instance, if you have 100,000 numbers, you might have 10 batches of 10,000 numbers each.
+. Use "worker threads" in Node.js to sum each batch in parallel.
+. As you sum up, display progress messages like "Summing up batch 1...", so we can see that your program is making progress.
+. Once all batches are summed, add up the totals from each batch to get the final sum and return it.
+
+3- Tips:
+. If you've never heard of "worker threads," don't worry. Look for documentation or tutorials on how to use them in Node.js. They're a tool to enable parallel processing.
+. Think about how you can efficiently split and sum the numbers.
+
+What We're Looking For:
+. Functionality: Your program should generate numbers and sum them up.
+. Efficiency: Can you make the sum faster using parallel processing?
+. Communication: We like to see progress messages to know how the program is doing.
+
+Submission:
+. Submit all the code you wrote.
+. Include clear instructions on how to run your program.
